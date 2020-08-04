@@ -18,10 +18,10 @@ int main()
     for(i=0;i<s.length();i++)
     {
         val = int(s[i])-64;
-        if(val%2==0 && s[i]>=65 && s[i]<=90)
+        if(i%2==0 && s[i]>=65 && s[i]<=90)
             while(val--)
                 cout<<"#";
-        else if(val%2==1 && s[i]>=65 && s[i]<=90)
+        else if(i%2==1 && s[i]>=65 && s[i]<=90)
             while(val--)
                 cout<<"$";
     }
