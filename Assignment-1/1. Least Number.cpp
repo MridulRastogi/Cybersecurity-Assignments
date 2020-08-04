@@ -3,7 +3,6 @@ and finds the least number. In case of invalid entered value,
 which contains characters other than digits then
 prompt the user to enter another value.*/
 #include<iostream>
-#include<sstream>
 #include<string>
 using namespace std;
 int main()
@@ -12,7 +11,6 @@ int main()
     cin>>n;
     int a[n];
     string s[n];
-
     for(i=0;i<n;i++)
     {
         cin>>s[i];
@@ -33,7 +31,6 @@ int main()
         }
         while(c==1);
         a[i]=stoi(s[i]);
-        //sscanf(s[i],"%d",&a[i]);
     }
     least = a[0];
     for(i=0;i<n;i++)
