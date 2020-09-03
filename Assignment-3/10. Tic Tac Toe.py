@@ -9,14 +9,17 @@ def out(a):
     print("_______________")
 
 def run():
-    ws.Beep(1600, 200);
-    ws.Beep(1595, 400);
-    ws.Beep(1590, 600);
-    ws.Beep(1585, 800);
-    ws.Beep(1400, 600);
-    ws.Beep(1405, 400);
-    ws.Beep(1410, 200);
-    ws.Beep(1200, 1000);
+    for i in range(1,2):
+        ws.Beep(1600, 100)
+        ws.Beep(1595, 200)
+        ws.Beep(1590, 300)
+        ws.Beep(1585, 400)
+        ws.Beep(1400, 300)
+        ws.Beep(1405, 200)
+        ws.Beep(1410, 150)
+        ws.Beep(1200, 250)
+        ws.Beep(1100, 300)
+        ws.Beep(1000, 400)
 
 def check(a,ch):
     c=0;
@@ -91,6 +94,7 @@ while(m!=1):
         if(m==1):
             print('\nCongratulations...Player X Wins!!!\n')
             run() 
+            exit()
         if(check_draw(a)==9 and m!=1):
             print("GAME IS DRAW")
             m = 1
@@ -104,6 +108,7 @@ while(m!=1):
         if(m==1):
             print('\nCongratulations...Player O Wins!!!\n')
             run() 
+            exit()
         if(check_draw(a)==9 and m!=1):
             print("GAME IS DRAW")
             m = 1
